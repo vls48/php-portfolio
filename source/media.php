@@ -18,33 +18,21 @@
 					<div class="child" id="child">
 
 					<?php
-					$query = "SELECT * FROM artwork";
-				  	$result = mysqli_query($connection, $query);
-					  // Check there are no errors with our SQL statement
-					  if (!$result) {
-				   	 die ("Database query failed.");
-				  	}
+						$query = "SELECT * FROM artwork";
+					  	$result = mysqli_query($connection, $query);
+						  // Check there are no errors with our SQL statement
+						  if (!$result) {
+					   	 die ("Database query failed.");
+					  	}
 
-				  	 while ($row = mysqli_fetch_assoc($result)) {
-          				?>
-					
-
-					 <img src=<?php echo $row['file_path'];?> alt="<?php echo $row['description'];?>" class="imagesize">
-
-
-
-					<a href="result.php?symbol=<?php echo $row['name'];?>">
-              <img src="images/<?php echo $row['name'];?>.svg"
-                   alt="<?php echo $row['name'];?> icon" />
-          </a>
-
-
-
-
-
-
-
-						<img src="images/media/traditional/theear.png" alt="back of womans head done in charcoal" class="imagesize">
+					  	 while ($row = mysqli_fetch_assoc($result)){
+					  	 	echo '<img src=';
+					  	 	echo $row['file_path'];
+					  	 	echo ' alt="';
+					  	 	echo $row['description'];
+					  	 	echo '" class="imagesize"> ';
+					  	 }
+          			?>
 
 					</div>
 					

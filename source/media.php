@@ -48,7 +48,7 @@
 			        <ul id="nav-list" class="visually-hidden">
 			          <li><a href="index.html">HOME</a></li>
 			          <li><a href="resume.html">RESUME</a></li>
-			          <li><a href="media.html" class="active" >MEDIA</a></li>
+			          <li><a href="media.php" class="active" >MEDIA</a></li>
 			          <li><a href="contact.html">CONTACT</a></li>
 			          <li id="nav-link"><a href="upcoming.html">UPCOMING</a></li>
 			        </ul>

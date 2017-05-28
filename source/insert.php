@@ -1,6 +1,9 @@
 <?php require_once 'includes/config.php'; ?>
 
 <?php
+
+						header('Refresh: 2; url=media.php');
+
 						$query = "SELECT * FROM artwork";
 					  	$result = mysqli_query($connection, $query);
 						  // Check there are no errors with our SQL statement
@@ -8,13 +11,13 @@
 					   	 die ("Database query failed.");
 					  	}
 
-					  	$File = $_POST['file']
-					  	$Title = $_POST['name']
-					  	$Desc = $_POST['description']
+					  	$File = $_POST['file'];
+					  	$Title = $_POST['name'];
+					  	$Desc = $_POST['description'];
 
-					  	$sql = "insert into artwork (file_path,name,description) values ('$File','$Title','$Desc')";
+					  	$sql = "INSERT INTO artwork (name, file_path, description) values ('$Title', '$File', '$Desc')";
 
-						if (!mysqli_query($conectionn,$sql))
+						if (!mysqli_query($connection,$sql))
 						{
 						 echo 'Not Inserted';
 						}
@@ -23,7 +26,5 @@
 						{
 						 echo 'Inserted Successfully';
 						}
-
-						header("refresh:2; url=media.php");
 ?>
 

@@ -2,7 +2,7 @@
 
 <?php
 
-						header('Refresh: 2; url=media.php');
+						header('Refresh: 2; Location: http://www.vlstewart.com');
 
 						$query = "SELECT * FROM artwork";
 					  	$result = mysqli_query($connection, $query);

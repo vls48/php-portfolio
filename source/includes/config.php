@@ -4,7 +4,7 @@
 
 $host = $_SERVER['HTTP_HOST'];
 
-if ($host == 'localhost') {
+if ($host == 'localhost:8888') {
   // Local database credentials
   $dbhost = 'localhost';
   $dbuser = 'root';

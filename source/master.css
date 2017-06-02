@@ -18,6 +18,7 @@ body{
 
 .lato{
     font-family: 'Lato', sans-serif;
+
 }
 
 @font-face {
@@ -82,6 +83,14 @@ input#send{
     background-color: rgba(255,255,255, 0);
 }
 
+button{
+    background-color: rgba(255,255,255, .7);
+    border: 2px solid darkgrey;
+    border-radius: 6px;
+    color: #706F62;
+    margin-top: 1.2rem;
+}
+
 body{
     background-color: #D7D0C8;
     background-image: url('images/general/grid.jpg');
@@ -100,14 +109,18 @@ HOME
 }
 
 .home-text{
-    padding-top: 12.5rem;
-    /*max-width: 37.5rem;*/
+    margin: 2rem 2rem;
+    padding: 7px;
+    max-width: 37.5rem;
+    float: right;
+    border: dashed 2px #388592;
+    border-radius: 6px; 
 }
 
 img#homeselfie{
     max-width: 43.75rem;
     padding-left: 1.875rem;
-    padding-top: 1.25rem;
+    padding-top: 2rem;
 }
 
 /*=-------------------------------=
@@ -117,8 +130,8 @@ UPCOMING
 img#upcoming{
     display: block;
     margin: auto;
-    padding: .5rem 0rem 0rem;
-    max-width: 43.75rem;
+    padding: 2rem 0rem 0rem;
+    max-width: 39rem;
 }
 
 .text-upcoming{
@@ -130,6 +143,9 @@ img#upcoming{
     margin: 0rem;
 }
 
+h3{
+    margin: 0;
+}
 /*=-------------------------------=
 RESUME
 =-------------------------------=*/
@@ -144,7 +160,7 @@ RESUME
 }
 
 .award{
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .text-honors h1{
@@ -161,6 +177,13 @@ img.award{
     display: block;
     margin: 1rem;
     text-align: left;
+}
+
+.resumeBox{
+    border: dashed 2px #388592;
+    height: 10rem;
+    border-radius: 6px; 
+    margin: 0 2rem;
 }
 
 /*=-------------------------------=
@@ -191,6 +214,11 @@ CONTACT
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.col-2 .social{
+        padding-top: 2rem;
 }
 
 .contact-info li{
@@ -204,8 +232,6 @@ CONTACT
     flex-direction: column;
     align-items: flex-end;
 }
-
-
 
 
 
@@ -289,6 +315,11 @@ GRID SYSTEM / FLEX BOX
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+
+.col-6 .contact-input{
+    height: auto;
+}
+
 .wrap-flex{
     display: flex;
     justify-content: center;
@@ -302,11 +333,12 @@ GRID SYSTEM / FLEX BOX
     flex: 1 66%;
     max-width: 60%;
     padding-bottom: 8rem;
+    padding-top: 2rem;
 
 }
 
 .child img{
-    padding: .5rem;
+    padding: 2px 1.2rem;
 }
 
 .icon{
@@ -356,18 +388,18 @@ animoooooottionnnnnn
  INDEX
 -----*/
     .home-text{
-        background-color: rgba(4,76,81, .5);
+        background-color: rgba(4,76,81, .7);
         border-radius: 4px;
         width: 100%;
         padding: 1.5rem;
         color: white;
 
+
     }
 
     img#homeselfie{
         width: 100%;
-        padding-left: 1.875rem;
-        padding-top: 1.25rem;
+
     }
 
     .col-6{
@@ -403,7 +435,31 @@ animoooooottionnnnnn
 }
 
 
+@media (max-width: 829px ) {
+    .icon{
+        height: 100%;
+        padding: 3.2rem 0rem;
+    }
 
+     .child{
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+        margin-bottom: 50px;
+        max-width: 70%;
+        padding-top: 0;
+    }
+
+    .wrap-flex{
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child img{
+        padding: .3rem 1.8rem;
+    }
+}
 
 
 @media (max-width: 46.875rem) {

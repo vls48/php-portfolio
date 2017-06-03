@@ -31,16 +31,8 @@
 			</div>			
 		</div>
 
-		<div class="row-nav smallnav">
-			<img src="images/general/menu.png" alt="menu" width="40" height="40" class="ham-menu">
-			        <ul id="nav-list" class="visually-hidden">
-			          <li><a href="index.html" class="active">HOME</a></li>
-			          <li><a href="resume.html">RESUME</a></li>
-			          <li><a href="media.php">MEDIA</a></li>
-			          <li><a href="contact.html">CONTACT</a></li>
-			          <li><a href="upcoming.html">UPCOMING</a></li>
-			        </ul>
-			</div>
+		<?php include 'includes/nav.php';?>
+		
 	</div>
 	<script src="main.js"></script>
 </body>

@@ -21,6 +21,8 @@
 		<input type="submit" name="submit" class="append">
 		
 	</form>
+
+	<?php include 'includes/nav.php';?>
 	
 </body>
 </html>

@@ -11,20 +11,40 @@ iconObj.addEventListener('click', function(evt) {
 }, false);
 
 window.addEventListener("resize", function(evt) {
-	bringback(evt, '.ham-menu');
+	if(window.innerWidth > 600) {
+		menulist.hidden = false;
+	}
 }, false);
 
 //FUNCTION
 function menu(evt) {
 	console.log('heyyyy');
-	menulist.classList.toggle('visually-hidden');
-	rowNav.classList.toggle('full-length');
-	rowNav.classList.toggle('row-nav');
+	console.log(menulist.hidden);
+	//menulist.classList.toggle('visually-hidden');
+	//rowNav.classList.toggle('full-length');
+	//rowNav.classList.toggle('row-nav');
+	if(menulist.hidden) {
+
+		menulist.hidden = false;
+		menulist.classList.add('full-length');
+	} else {
+		menulist.hidden = true;
+		menulist.classList.remove('full-length');
+	}
 }
 
-function bringback(evt) {
-		console.log('hi');
+// function bringback(evt) {
+// 		console.log('hi');
+// 	if(rowNav.hidden) {
+// 		rowNav.hidden = false;
+// 	} else {
+// 		rowNav.hidden = true;
+// 	}
+// }
 
-
-
-}
+if(window.innerWidth > 600) {
+		menulist.hidden = false;
+	}
+	else {
+		menulist.hidden = true;
+	}

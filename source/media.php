@@ -1,17 +1,5 @@
 <?php require_once 'includes/config.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-
-	 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
-	<title>MEDIA</title>
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
-	<link rel="stylesheet" href="master.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato%7CPrata" rel="stylesheet">
-	
-</head>
+<?php include 'includes/header.php';?>
 <body>
 	<div class="wrapper">
 			<div class="row wrap-flex">
@@ -54,6 +42,5 @@
     // Step 5: Close Database Connection
     mysqli_close($connection);
   	?>
-	<script src="main.js"></script>
-</body>
-</html>
+  	
+		<?php include 'includes/footer.php';?>

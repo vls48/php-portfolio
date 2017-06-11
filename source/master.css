@@ -670,14 +670,13 @@ animoooooottionnnnnn
     }
 
     .full-length{
-        transition: all 1s;
         height: 23rem;
         width: 100%;
         position: fixed;
-        top: 0px;
+        top: 60px;
         background-color: #388592;
-        border-top: 25px solid #044C51;
         text-align: center;
+
     }
     
     .row-nav{
